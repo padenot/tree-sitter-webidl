@@ -8,7 +8,7 @@ module.exports = grammar({
   name: 'webidl',
 
   rules: {
-    source_file: $ => repeat($.definition),
+    source_file: $ => repeat(choice($.definition, $.comment)),
 
     definition: $ => choice(
       $.interface_definition,
@@ -56,6 +56,11 @@ module.exports = grammar({
 
     parameter_list: $ => seq($.parameter, repeat(seq(',', $.parameter))),
     parameter: $ => seq($.type, $.identifier),
+
+    comment: $ => token(choice(
+      seq('//', /.*/),
+      seq('/*', /[^*]*\*+([^/*][^*]*\*+)*/, '/')
+    )),
   }
 });
 
