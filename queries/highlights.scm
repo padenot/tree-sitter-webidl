@@ -63,10 +63,6 @@
 
 ; Special constructs  
 (stringifier) @keyword
-(getter) @keyword
-(setter) @keyword
-(deleter) @keyword
-(legacycaller) @keyword
 
 ; Punctuation
 ["(" ")" "{" "}" "<" ">" ";" "," "=" "?" "[" "]" "*" "..."] @punctuation.delimiter
