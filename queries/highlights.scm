@@ -18,41 +18,43 @@
 ; highlights.scm
 
 ; Keywords
-((interface) @keyword)
-((dictionary) @keyword)
-((enum) @keyword)
-((callback) @keyword)
-((typedef) @keyword)
-((includes) @keyword)
-((attribute) @keyword)
-((const) @keyword)
-((constructor) @keyword)
+"interface" @keyword
+"dictionary" @keyword  
+"enum" @keyword
+"callback" @keyword
+"typedef" @keyword
+"includes" @keyword
+"attribute" @keyword
+"const" @keyword
+"constructor" @keyword
+"namespace" @keyword
+"partial" @keyword
+"mixin" @keyword
+"static" @keyword
+"readonly" @keyword
+"required" @keyword
+"optional" @keyword
 
 
-((async_keyword)	@keyword)
-((deleter_keyword)	@keyword)
-((getter_keyword)	@keyword)
-((inherit_keyword)	@keyword)
-((iterable_keyword)	@keyword)
-((maplike_keyword)	@keyword)
-((mixin_keyword)	@keyword)
-((namespace_keyword)	@keyword)
-((partial_keyword)	@keyword)
-((setlike_keyword)	@keyword)
-((setter_keyword)	@keyword)
-((static_keyword)	@keyword)
+; Extended attribute identifiers
+(extended_attribute (identifier) @attribute)
 
-((extended_attribute_list) @attribute)
-((extended_attribute (identifier) @attribute))
 
 ; Types
 ((primitive_type) @type)
 ((string_type) @type)
 ((type) @type)
 
-; Identifiers
-((identifier) @variable)
-((field name: (identifier) @property))
+; Identifiers  
+(interface name: (identifier) @type)
+(dictionary name: (identifier) @type)
+(enum name: (identifier) @type)
+(namespace name: (identifier) @type)
+(field name: (identifier) @property)
+(operation name: (identifier) @function.method)
+(attribute name: (identifier) @property)
+(const name: (identifier) @constant)
+(identifier) @variable
 
 ; Literals
 ((string) @string)

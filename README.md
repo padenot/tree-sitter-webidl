@@ -25,6 +25,10 @@ Run parser on a single file:
 tree-sitter parse testcases/PBrowser.webidl
 ```
 
+Run the parser on all files of `testcases/`, that are all `webidl` files of
+Firefox as of
+https://github.com/mozilla-firefox/firefox/commit/031fb86f50ca9a075af819c514114539ec8a9f60.
+
 ## License
 
 MPL-2.0
