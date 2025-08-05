@@ -1,7 +1,7 @@
 # tree-sitter-webidl
 
-Tree-sitter parser for Mozilla's webidl (Inter-process Protocol Definition
-Language), with `highlight.scm` query file.
+Tree-sitter parser for the WHATWG Web IDL (Interface Definition Language),
+with `highlight.scm` query file.
 
 Spec: https://webidl.spec.whatwg.org/
 
@@ -22,7 +22,7 @@ tree-sitter generate
 Run parser on a single file:
 ```bash
 
-tree-sitter parse testcases/PBrowser.webidl
+tree-sitter parse testcases/DedicatedWorkerGlobalScope.webidl
 ```
 
 Run the parser on all files of `testcases/`, that are all `webidl` files of
