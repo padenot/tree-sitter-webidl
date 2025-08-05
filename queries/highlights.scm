@@ -61,13 +61,12 @@
 ((number_literal) @number)
 ((string_literal) @string)
 
-; Special constructs
-(stringifier_attribute) @keyword
-(stringifier_operation) @keyword
-(getter_operation) @keyword
-(setter_operation) @keyword
-(deleter_operation) @keyword
-(legacycaller_operation) @keyword
+; Special constructs  
+(stringifier) @keyword
+(getter) @keyword
+(setter) @keyword
+(deleter) @keyword
+(legacycaller) @keyword
 
 ; Punctuation
 ["(" ")" "{" "}" "<" ">" ";" "," "=" "?" "[" "]" "*" "..."] @punctuation.delimiter
